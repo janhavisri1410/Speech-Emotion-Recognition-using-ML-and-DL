@@ -14,27 +14,6 @@ The samples include:
 
 - 2800 files from **TESS**. A set of 200 target words were spoken in the carrier phrase "Say the word _____' by two actresses (aged 26 and 64 years) and recordings were made of the set portraying each of seven emotions (anger, disgust, fear, happiness, pleasant surprise, sadness, and neutral). There are 2800 stimuli in total. Two actresses were recruited from the Toronto area. Both actresses speak English as their first language, are university educated, and have musical training. Audiometric testing indicated that both actresses have thresholds within the normal range.
 
-**Metrics**
-
-*Model summary*
-
-![Link to model](media/model.png) 
-
-*Loss and accuracy plots*
-
-![Link to loss](media/test7_2.JPG) 
-
-![Link to accuracy](media/test7_3.JPG)
-
-*Classification report*
-
-![Link do classification report](media/test7_1.JPG)
-
-*Confusion matrix*
-
-![Link do classification report](media/test7_4.JPG)
-
-**How to use the code inside this repository**
 
 1)  ```git clone https://github.com/abhay8463/Speech-Emotion-Recognition-using-ML-and-DL.git ``` OR, as an alternative, all the optional steps below.
 
@@ -55,7 +34,6 @@ The format you need to have to make the following steps work is:
 
 6) *ONLY IF YOU WANT TO CREATE NEW FEATURES*: run ```create_features.py```. Please note this is NOT necessary as in the ```features``` folder there are already the joblib files created with ```create_features.py```.
 
-7) *ONLY IF YOU WANT TO CREATE A NEW MODEL*:  run the python notebook [SER(Deep_Learning).ipynb](https://github.com/abhay8463/Speech-Emotion-Recognition-using-ML-and-DL/blob/master/Deep%20Learning/SER(Deep_Learning).ipynb). Please note this is NOT necessary as in the ```DeepLearning``` folder there is already a [pre_trained model](https://github.com/abhay8463/Speech-Emotion-Recognition-using-ML-and-DL/blob/master/Deep%20Learning/SER_model.h5) to use.
 
 **How to test the model created in this work**
 
@@ -71,8 +49,4 @@ Feel free to try with other files or record your voice. I still have to try this
 
 *Important note*: the classes are encoded from 0 to 7 in the code. In the dataset, from 01 to 08. Be aware when you try. If the model predicts 0 and you are using a NEUTRAL file (01), this is correct and the expected behavior. Keras wants the predictions to start from 0 and not from 1, so the code is adjusted to cope with this requirement.
 
-Team Members:
-Abhay Gupta,
-Aditya Karmokar,
-Khadija Mohamad Haneefa, 
-Chennaboina Hemantha Lakshmi
+Janhavi Srivastava
